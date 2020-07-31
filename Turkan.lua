@@ -2484,13 +2484,13 @@ send(msg.chat_id_, msg.id_, "- تم مسح المطورين من البوت  ")
 end
 if text == ("قائمه العام 📝") or text == ("المحظورين عام") then
 local list = redis:smembers(bot_id.."Turkan:Removal:User:Groups")
-Gban = "\n-قائمة المحظورين عام في البوت\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Gban = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Gban = Gban..""..k.."~ : [@"..username.."]\n"
+Gban = Gban..""..k.."- [@"..username.."]\n"
 else
-Gban = Gban..""..k.."~ : `"..v.."`\n"
+Gban = Gban..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -2500,13 +2500,13 @@ send(msg.chat_id_, msg.id_, Gban)
 end
 if text == ("قائمه المطورين 📝") then
 local list = redis:smembers(bot_id.."Turkan:Sudo:User")
-Sudos = "\n-قائمة مطورين في البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Sudos = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Sudos = Sudos..""..k.."~ : [@"..username.."]\n"
+Sudos = Sudos..""..k.."- [@"..username.."]\n"
 else
-Sudos = Sudos..""..k.."~ : `"..v.."`\n"
+Sudos = Sudos..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3036,13 +3036,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Removal:User:Groups")
-Gban = "\n-قائمة المحظورين عام في البوت\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Gban = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Gban = Gban..""..k.."~ : [@"..username.."]\n"
+Gban = Gban..""..k.."- [@"..username.."]\n"
 else
-Gban = Gban..""..k.."~ : `"..v.."`\n"
+Gban = Gban..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3057,13 +3057,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Sudo:User")
-Sudos = "\n-قائمة مطورين في البوت \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Sudos = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Sudos = Sudos..""..k.."~ : [@"..username.."]\n"
+Sudos = Sudos..""..k.."- [@"..username.."]\n"
 else
-Sudos = Sudos..""..k.."~ : `"..v.."`\n"
+Sudos = Sudos..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3078,13 +3078,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Basic:Constructor"..msg.chat_id_)
-Asase = "\n-قائمة المنشئين الاساسين في المجموعه\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Asase = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Asase = Asase..""..k.."~ : [@"..username.."]\n"
+Asase = Asase..""..k.."- [@"..username.."]\n"
 else
-Asase = Asase..""..k.."~ : `"..v.."`\n"
+Asase = Asase..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3101,13 +3101,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Basic:Constructor"..msg.chat_id_)
-Asase = "\n-قائمة المنشئين الاساسين في المجموعه\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Asase = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Asase = Asase..""..k.."~ : [@"..username.."]\n"
+Asase = Asase..""..k.."- [@"..username.."]\n"
 else
-Asase = Asase..""..k.."~ : `"..v.."`\n"
+Asase = Asase..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3124,13 +3124,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Constructor"..msg.chat_id_)
-Monsh = "\n-قائمة منشئين المجموعه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Monsh = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Monsh = Monsh..""..k.."~ : [@"..username.."]\n"
+Monsh = Monsh..""..k.."- [@"..username.."]\n"
 else
-Monsh = Monsh..""..k.."~ : `"..v.."`\n"
+Monsh = Monsh..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3145,13 +3145,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Manager"..msg.chat_id_)
-Moder = "\n-قائمة المدراء في المجموعه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Moder = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Moder = Moder..""..k.."~ : [@"..username.."]\n"
+Moder = Moder..""..k.."- [@"..username.."]\n"
 else
-Moder = Moder..""..k.."~ : `"..v.."`\n"
+Moder = Moder..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3166,13 +3166,13 @@ send(msg.chat_id_,msg.id_,'\n⌔︙عليك الاشتراك في قناه ال�
 return false 
 end
 local list = redis:smembers(bot_id.."Turkan:Mod:User"..msg.chat_id_)
-Admin = "\n-قائمة الادمنيه في المجموعه\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Admin = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Admin = Admin..""..k.."~ : [@"..username.."]\n"
+Admin = Admin..""..k.."- [@"..username.."]\n"
 else
-Admin = Admin..""..k.."~ : `"..v.."`\n"
+Admin = Admin..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3182,13 +3182,13 @@ send(msg.chat_id_, msg.id_, Admin)
 end
 if text == ("المميزين") and Admin(msg) then
 local list = redis:smembers(bot_id.."Turkan:Special:User"..msg.chat_id_)
-Vips = "\n-قائمة المميزين في المجموعه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Vips = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Vips = Vips..""..k.."~ : [@"..username.."]\n"
+Vips = Vips..""..k.."- [@"..username.."]\n"
 else
-Vips = Vips..""..k.."~ : `"..v.."`\n"
+Vips = Vips..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3198,13 +3198,13 @@ send(msg.chat_id_, msg.id_, Vips)
 end
 if text == ("المكتومين") and Admin(msg) then
 local list = redis:smembers(bot_id.."Turkan:Silence:User:Group"..msg.chat_id_)
-Muted = "\n-قائمة المكتومين في المجموعه\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Muted = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Muted = Muted..""..k.."~ : [@"..username.."]\n"
+Muted = Muted..""..k.."- [@"..username.."]\n"
 else
-Muted = Muted..""..k.."~ : `"..v.."`\n"
+Muted = Muted..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3214,13 +3214,13 @@ send(msg.chat_id_, msg.id_, Muted)
 end
 if text == ("المحظورين") and Admin(msg) then
 local list = redis:smembers(bot_id.."Turkan:Removal:User:Group"..msg.chat_id_)
-Bans = "\n-قائمة المحظورين في المجموعه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Bans = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 local username = redis:get(bot_id.."Turkan:Save:Username" .. v)
 if username then
-Bans = Bans..""..k.."~ : [@"..username.."]\n"
+Bans = Bans..""..k.."- [@"..username.."]\n"
 else
-Bans = Bans..""..k.."~ : `"..v.."`\n"
+Bans = Bans..""..k.."- `"..v.."`\n"
 end
 end
 if #list == 0 then
@@ -3234,7 +3234,7 @@ if #list == 0 then
 send(msg.chat_id_, msg.id_,"- لا توجد صلاحيات مضافه هنا")
 return false
 end
-Validity = "\n- قائمة الصلاحيات المضافه \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Validity = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 var = redis:get(bot_id.."Turkan:Add:Validity:Group:Rt"..v..msg.chat_id_)
 if var then
@@ -3247,7 +3247,7 @@ send(msg.chat_id_, msg.id_,Validity)
 end
 if text == "الاوامر المضافه" and Constructor(msg) then
 local list = redis:smembers(bot_id.."Turkan:Command:List:Group"..msg.chat_id_.."")
-Command = "- قائمه الاوامر المضافه  \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+Command = "𓂅 List Of Supervisors : \n—————————————\n"
 for k,v in pairs(list) do
 Commands = redis:get(bot_id.."Turkan:Get:Reides:Commands:Group"..msg.chat_id_..":"..v)
 if Commands then 
@@ -3263,7 +3263,7 @@ send(msg.chat_id_, msg.id_,"["..Command.."]")
 end
 if text == "تاك للكل" and Admin(msg) then
 tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,taha)
-local t = "\n-  قائمة الاعضاء \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n"
+local t = "𓂅 List Of Supervisors : \n—————————————\n"
 x = 0
 local list = taha.members_
 for k, v in pairs(list) do
