@@ -81,7 +81,7 @@ done
 ]])
 Run_File_Turkan:close()
 ------------------------------------------------------------------------------------------------------------
-local Run_SM = io.open("oy", 'w')
+local Run_SM = io.open("tu", 'w')
 Run_SM:write([[
 #!/usr/bin/env bash
 THIS_DIR=$(cd $(dirname $0); pwd)
@@ -95,9 +95,9 @@ done
 Run_SM:close()
 io.popen("mkdir Files")
 os.execute('chmod +x tg')
-os.execute('chmod +x oy')
+os.execute('chmod +x tu')
 os.execute('chmod +x Turkan')
-os.execute('./oy')
+os.execute('./tu')
 Status = true
 else   
 f:close()  
